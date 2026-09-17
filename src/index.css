@@ -1,9 +1,55 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: serif;
+}
 
 .hole {
+  width: 150px;
+  height: 100px;
   background: url("/hole.png") no-repeat center/contain;
+}
+
+.hole-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 16px;
+}
+
+.hole-header button {
+  width: 60%;
+  padding: 8px 20px;
+  border: 1px solid #999;
+  background: #eee;
+  cursor: pointer;
+}
+
+.hole-header button:hover {
+  background: #ddd;
+}
+
+.hole-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
 }
 
 .mole {
   background-image: url("/mole.png");
+  cursor: pointer;
 }
 
+.start-screen {
+  text-align: center;
+}
+
+.start-screen button {
+  width: 100%;
+  padding: 8px 20px;
+  border: 1px solid #999;
+  background: #eee;
+  cursor: pointer;
+}
